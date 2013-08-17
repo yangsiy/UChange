@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>Received Request</h1>
+
+        <p/>
+        <ul class="nav nav-tabs nav-stacked">
+            {% for request in requests %}
+            <li><a href="{% url 'user:detail' request.person.item_now.id  %}">({{request.person.student_id}}){{request.person.first_name}}
+                {{request.person.last_name}} -- {{request.person.item_now.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

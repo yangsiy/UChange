@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>Exchange Result</h1>
+        <br />
+
+        <p/>
+        {% if flag %}
+        <h4>No Exchange Needed.</h4>
+        {% else %}
+        You should give <font size=5>{{stu.item_original}}</font> to <a
+            href="{% url 'user:profile' give.student_id %}"><font size=5>{{give.first_name}} {{give.last_name}}
+        ({{give.student_id}})</font></a>
+        <br />
+        <br />
+
+        <p/>
+        You will get <font size=5>{{stu.item_now}}</font> from <a
+            href="{% url 'user:profile' get.student_id %}"><font
+            size=5>{{get.first_name}} {{get.last_name}} ({{get.student_id}})</font></a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

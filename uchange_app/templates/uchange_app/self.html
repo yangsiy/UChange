@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span8">
+            <h1>Hello, {{info.first_name}} {{info.last_name}}</h1>
+            {% if number_of_requests %}
+            <p><a href="{% url 'user:request_list'%}"><h3>
+                <font color=red font-weight=bold>You have
+                    {{number_of_requests}} requests now!</font></h3></a>
+
+            <p>
+                {% else %}
+
+            <p>No request at the moment.
+
+            <p>
+                {% endif %}
+
+            <p/>
+            <h4>Item Owned Now: <a href="{% url 'user:detail' info.item_now.id %}">{{info.item_now.name}}</a>
+            </h4>
+            <br />
+            <p>
+            {% if info.item_original != info.item_now %}
+            From <font size=5>{{info.item_original}}</font> to <font size=5>{{info.item_now}}</font></p>
+            {% else %}
+            Find something to <font size=5>change now!</font></p>
+            {% endif %}
+            <p/>
+        </div>
+
+        <div class="span4" style="background-color:#FFF6EC">
+            <ul class="nav nav-tabs nav-stacked">
+                <li><a href="{% url 'user:self_profile' %}">My Profile</a></li>
+                {% if edit_flag %}
+                <li><a href="{% url 'user:edit_item' %}">Edit My Item</a></li>
+                {% endif %}
+                <li><a href="{% url 'user:item_list' %}">Find Goods</a></li>
+                <li><a href="{% url 'user:myrequest' %}">My Request ({{number_of_myrequests}})</a></li>
+                <li><a href="{% url 'user:person_history' user%}">My Exchange History</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

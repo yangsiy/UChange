@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>Item List</h1>
+
+        <p/>
+        <ul class="nav nav-tabs nav-stacked">
+            {% for item in items %}
+            <li><a href="{% url 'user:detail' item.id %}">{{item.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/uchange/!svn/ver/51/2/uchange
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/uchange/!svn/ver/12/2/uchange/wsgi.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/uchange/!svn/ver/12/2/uchange/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/uchange/!svn/ver/12/2/uchange/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/uchange/!svn/ver/51/2/uchange/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/uchange/!svn/ver/12/2/uchange/urls.py
+END

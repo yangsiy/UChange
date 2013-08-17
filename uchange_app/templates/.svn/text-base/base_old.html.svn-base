@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+{% load staticfiles %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title></title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1187.37">
+    <!--<link rel="stylesheet" href="{% static 'uchange/default.css' %}" />-->
+    <link rel="stylesheet" href="{% static 'uchange/css/bootstrap.min.css' %}"/>
+    <script src="{% static 'uchange/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<header>
+    <img src="{% static 'uchange/images/logo.png' %}">
+</header>
+<nav>
+    <ul class="fancyNav">
+        <li id="home"><a href="{% url 'user:self' user %}" class="homeIcon">Home</a></li>
+        <li><a href="{% url 'user:item_list' user %}">Item list</a></li>
+        <li><a href="{% url 'user:myrequest' user %}">My request</a></li>
+        <li><a href="{% url 'user:request_list' user %}">Received request</a></li>
+        <li><a href="/">Log out</a></li>
+        <li><a href="#contact">About us</a></li>
+    </ul>
+</nav>
+<div>
+    {% block content %}{% endblock %}
+</div>
+<footer>Copyright © 2013 DBL</footer>
+</body>
+</html>

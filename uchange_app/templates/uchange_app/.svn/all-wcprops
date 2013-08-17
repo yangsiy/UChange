@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app
+END
+myrequest.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/myrequest.html
+END
+result.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/result.html
+END
+item_history.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/item_history.html
+END
+profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/profile.html
+END
+init_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/init_item.html
+END
+detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/detail.html
+END
+edit_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/edit_item.html
+END
+request_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/request_list.html
+END
+edit_profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/edit_profile.html
+END
+person_history.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/person_history.html
+END
+item_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/item_list.html
+END
+self.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/self.html
+END
+self_profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/uchange/!svn/ver/13/2/uchange_app/templates/uchange_app/self_profile.html
+END

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>Edit Profile</h1>
+
+        <p>If you do not want to change password, leave 'password' empty.</p>
+
+        <form action="/home/edit_profile/operate/" method="post">{% csrf_token %}
+            <div class="span2" align="right" style="line-height: 280%">
+                <p><strong>First Name:</strong></p>
+
+                <p><strong>Last Name:</strong></p>
+
+                <p><strong>Password:</strong></p>
+
+                <p><strong>Password again:</strong></p>
+
+                <p><strong>Email:</strong></p>
+            </div>
+            <div class="span9">
+                <p><input type="text" name='first_name' value="{{info.first_name}}"></p>
+
+                <p><input type="text" name='last_name' value="{{info.last_name}}"></p>
+
+                <p><input type="text" name='password'></p>
+
+                <p><input type="text" name='password1'></p>
+
+                <p><input type="text" name='email' value="{{info.email}}"></p>
+            </div>
+            <div class="span10 offset2">
+                <br/>
+                <button type="submit" class="btn submit btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
